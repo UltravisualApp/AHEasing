@@ -10,8 +10,7 @@
 //  http://sam.zoy.org/wtfpl/COPYING for more details.
 //
 
-#import <QuartzCore/QuartzCore.h>
-#include "easing.h"
+#include "AHEasing.h"
 
 @interface CAKeyframeAnimation (AHEasing)
 
