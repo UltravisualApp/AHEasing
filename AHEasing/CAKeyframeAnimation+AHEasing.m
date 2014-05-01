@@ -26,7 +26,7 @@
 	NSMutableArray *values = [NSMutableArray arrayWithCapacity:keyframeCount];
 	
 	CGFloat t = 0.0;
-	CGFloat dt = 1.0 / (keyframeCount - 1);
+	CGFloat dt = 1.f / (keyframeCount - 1);
 	for(size_t frame = 0; frame < keyframeCount; ++frame, t += dt)
 	{
 		CGFloat value = fromValue + function(t) * (toValue - fromValue);
@@ -48,7 +48,7 @@
 	NSMutableArray *values = [NSMutableArray arrayWithCapacity:keyframeCount];
 	
 	CGFloat t = 0.0;
-	CGFloat dt = 1.0 / (keyframeCount - 1);
+	CGFloat dt = 1.f / (keyframeCount - 1);
 	for(size_t frame = 0; frame < keyframeCount; ++frame, t += dt)
 	{
 		CGFloat x = fromPoint.x + function(t) * (toPoint.x - fromPoint.x);
@@ -75,7 +75,7 @@
 	NSMutableArray *values = [NSMutableArray arrayWithCapacity:keyframeCount];
 	
 	CGFloat t = 0.0;
-	CGFloat dt = 1.0 / (keyframeCount - 1);
+	CGFloat dt = 1.f / (keyframeCount - 1);
 	for(size_t frame = 0; frame < keyframeCount; ++frame, t += dt)
 	{
 		CGFloat w = fromSize.width + function(t) * (toSize.width - fromSize.width);
